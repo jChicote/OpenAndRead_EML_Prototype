@@ -37,15 +37,18 @@
             this.fromTextBox = new TextBox();
             this.toTextBox = new TextBox();
             this.panel4 = new Panel();
-            this.messageBodyTextBox = new RichTextBox();
             this.panel2 = new Panel();
             this.selectEmailButton = new Button();
+            this.subjectTextBox = new TextBox();
+            this.tableLayoutPanel3 = new TableLayoutPanel();
+            this.messageBodyTextBox = new RichTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -130,21 +133,12 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.messageBodyTextBox);
+            this.panel4.Controls.Add(this.tableLayoutPanel3);
             this.panel4.Dock = DockStyle.Fill;
             this.panel4.Location = new Point(3, 136);
             this.panel4.Name = "panel4";
             this.panel4.Size = new Size(582, 305);
             this.panel4.TabIndex = 3;
-            // 
-            // messageBodyTextBox
-            // 
-            this.messageBodyTextBox.Dock = DockStyle.Fill;
-            this.messageBodyTextBox.Location = new Point(0, 0);
-            this.messageBodyTextBox.Name = "messageBodyTextBox";
-            this.messageBodyTextBox.Size = new Size(582, 305);
-            this.messageBodyTextBox.TabIndex = 6;
-            this.messageBodyTextBox.Text = "";
             // 
             // panel2
             // 
@@ -164,6 +158,38 @@
             this.selectEmailButton.Text = "Select Eml File";
             this.selectEmailButton.UseVisualStyleBackColor = true;
             // 
+            // subjectTextBox
+            // 
+            this.subjectTextBox.Location = new Point(3, 3);
+            this.subjectTextBox.Name = "subjectTextBox";
+            this.subjectTextBox.Size = new Size(576, 23);
+            this.subjectTextBox.TabIndex = 5;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Controls.Add(this.subjectTextBox, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.messageBodyTextBox, 0, 1);
+            this.tableLayoutPanel3.Dock = DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new Point(0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new Size(582, 305);
+            this.tableLayoutPanel3.TabIndex = 7;
+            // 
+            // messageBodyTextBox
+            // 
+            this.messageBodyTextBox.Dock = DockStyle.Fill;
+            this.messageBodyTextBox.Location = new Point(3, 32);
+            this.messageBodyTextBox.Name = "messageBodyTextBox";
+            this.messageBodyTextBox.Size = new Size(576, 270);
+            this.messageBodyTextBox.TabIndex = 6;
+            this.messageBodyTextBox.Text = "";
+            // 
             // EmailReader
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -179,6 +205,8 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
         }
 
@@ -195,6 +223,8 @@
         private TextBox fromTextBox;
         private TextBox toTextBox;
         private Panel panel4;
+        private TableLayoutPanel tableLayoutPanel3;
+        private TextBox subjectTextBox;
         private RichTextBox messageBodyTextBox;
     }
 }
