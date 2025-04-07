@@ -1,8 +1,8 @@
 namespace OpenAndRead_EML_Prototype
 {
-    public partial class Form1 : Form
+    public partial class EmailReader : Form
     {
-        public Form1()
+        public EmailReader()
         {
             InitializeComponent();
         }
